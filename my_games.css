@@ -1,0 +1,48 @@
+.my_game{
+    position: relative;
+}
+
+#container{
+    height:120px;
+    width: 100%;
+     opacity: 0.4; 
+     background-color: rgb(81, 78, 97);
+    border-radius: 30px;
+}
+#description{
+    color: #ffffff;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-top: 5px;
+    
+    font-size: 15px;
+    position: relative;
+}
+
+#_detail{
+    margin-left: 15px;
+    color: #ffffff;
+    top:50px;
+    font-size: 12px;
+    
+}
+
+#date{
+    position: relative;
+    margin:0;
+    padding: 0;
+    left:220px;
+    bottom: 40px;
+}
+#day{
+    top:15px;
+    position: relative;
+    left:3px
+}
+#_line{
+    position: relative;
+    width: 20px;
+    height: 1px;
+   background-color:white;
+   opacity: 0.2;
+}

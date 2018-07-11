@@ -1,0 +1,62 @@
+
+.details .fa-map-marker{
+    left:-17px;
+}
+
+.fa{
+    position: relative;
+   
+}
+
+#deta{
+    left:60px;
+    position: absolute;
+    color:rgb(255, 255, 255);
+}
+
+#date_time{
+    position: relative;
+    color:rgb(255, 255, 255);
+        margin-right: 20px;
+} 
+
+ .glyphicon{
+   color:white;
+   left:8.3px; 
+   position: relative;
+ }
+
+ #line{
+    position: relative;
+     width: 100%;
+     height: 1px;
+    background-color:white;
+    opacity: 0.2;
+ }
+
+ #fofa h1{
+     font-size: 40px;
+     top:10px;
+ }
+
+ .btn-primary{
+    text-align: center;
+    position: relative;
+    margin-left: 40px;
+ }
+
+#map{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(41, 134, 103);
+}
+
+.icon{
+    /* position: absolute; */
+    position: fixed;
+    height: 500px;
+}
+
+.btn-primary{
+    font-size: 20px;
+}
