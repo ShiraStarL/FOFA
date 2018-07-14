@@ -15,6 +15,12 @@ main{
 		display: block;
 	    margin:auto;
 }
+
+footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#c6c6d4;
+}
 #wrapper{
 		margin: 0 auto;
 		max-width: 100%;
@@ -145,6 +151,13 @@ main{
 }
 
 /*create-game.html & create-tournament CSS */
+
+#eventDet{
+	display: none;
+}
+#createGameForm{
+	display: block;
+}
 .fa-bars{
 		background-color: #ffffff;
 }
@@ -295,6 +308,8 @@ button{
 	position: relative;
 	top: 50px;
 }
+
+
 /*************/
 /* maps css */
 /***********/
@@ -303,6 +318,43 @@ button{
 	height: 193px;
 	display: block;
 	margin-top: 20px;
+}
+
+/*************/
+/*log in css*/
+/***********/
+
+#facebook {
+    width: 250px;
+    background-color: #5858c5;
+}
+
+#sign_in .btn-light{
+    background-color: #5d5d5e;
+    border-color:#5d5d5e;
+   
+}
+#form_login .btn-light{
+    background-color: #b3b3b6;
+    border-color:#5d5d5e;
+    border-radius: 30px;
+    color:rgb(255, 255, 255);
+    height: 50px;
+}
+
+#form_login{
+    text-align: center;
+    color: white;
+   
+}
+
+#form_login .col-form-label-sm{
+    width: 0;
+}  
+
+
+#form_login .col-sm-10{
+    width: 270px;
 }
 
 /*********/
