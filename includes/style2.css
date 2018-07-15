@@ -1,12 +1,13 @@
 /*This file contain defult CSS of all pages in FOFA project*/
+
+#updateEventForm{
+	display:none;
+}
+
 *{margin: 0 ; padding: 0;}
 
 header, section, nav, footer, article {
     display: block;
-}
-
-h6{
-	color: white;
 }
 
 body{
@@ -61,8 +62,8 @@ footer{
 		background-repeat: no-repeat;
 		position: relative;
 		float: left;
-		left: 13px;
-		top: 7px;
+		left: 7px;
+		top: 13px;
 }
 
 #burger1{
@@ -103,25 +104,41 @@ footer{
 	    background-color: #555555;
 	    color: #ffffff;
 }
-#profile_in{
-	width: 50px;
+#profile{		
+width: 50px;
+height: 50px;
+display: inline-block;
+background-repeat: no-repeat;
+position: relative;
+float:right;
+right:8px;
+top: -15px;
+}
+
+#profile h1{
+	float:left;
+}
+
+
+#logo{
+	background-image: url(../images/logo.png);
 	height: 50px;
 	display: inline-block;
 	background-repeat: no-repeat;
 	position: relative;
-	float: right;
-	top: -15px;
-	right:6px;
+	left: 87px;
 }
+
+
 .user_name{
-	width: 50px;
-	height: 50px;
 	display: inline-block;
 	background-repeat: no-repeat;
 	position: relative;
-	float: right;
-	right:15px;
+	float:right;
+	right:8px;
 }
+
+
 .event{
 		display: block;
 		width: 350px;
@@ -242,8 +259,6 @@ form{
 	    color: #ffffff;
 }
 
-
-
 /*eventDetails.html CSS*/
 #chat{
 		display: block;
@@ -293,7 +308,7 @@ button{
 		width: 153px;
 		position: relative;
 		top: 30px;
-		margin: 3px;
+		left: 30px;
 }
 /* notifaction.html CSS*/
 .op{
@@ -339,25 +354,12 @@ button{
 /*************/
 /*log in css*/
 /***********/
-#logo_login{
-background-image: url(../images/logo.png);
-/* width: 1000px; */
-height: 50px;
-display: inline-block;
-background-repeat: no-repeat;
-position: relative;
-left:85px;
-}
 
-
-
-#facebook  {
-	width: 250px;
-	position: relative;
-}
-
-#facebook .btn-light{
-	background-color: #3d2fbd;
+#facebook {
+    width: 250px;
+	background-color: #5858c5;
+	border-radius: 30px;
+	
 }
 
 #sign_in .btn-light{
@@ -387,13 +389,13 @@ left:85px;
 #form_login .col-sm-10{
     width: 270px;
 }
-
-#updateEventForm{
-	display:none;
+button {
+	display: block;
+	width: 153px;
+	position: relative;
+	top: 30px;
+	
 }
-
-
-
 /*********/
 /*mobile*/
 /*******/
@@ -438,4 +440,60 @@ left:85px;
 		position: relative;
 		left: 50px;
 	}
+}
+
+
+
+
+
+#form_login{
+    text-align: center;
+    color: white;
+   
+}
+
+.col-form-label-sm{
+    width: 0;
+}  
+
+
+.col-sm-10{
+    width: 270px;
+}
+
+.btn{
+    display: inline;
+    right:10px;
+    left:0px;
+}
+.btn-lg{
+    border-radius: .9rem;
+    
+}
+
+#sign_in .btn-light{
+    background-color: #5d5d5e;
+    border-color:#5d5d5e;
+   
+}
+
+
+
+#facebook .btn-light {
+    width: 250px;
+    background-color: #5858c5;
+}
+
+footer{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#c6c6d4;
+}
+
+.btn-light{
+    background-color: #b3b3b6;
+    border-color:#5d5d5e;
+    border-radius: 30px;
+    color:rgb(255, 255, 255);
+    height: 50px;
 }

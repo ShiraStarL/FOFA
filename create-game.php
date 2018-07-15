@@ -3,7 +3,7 @@
 	<head>
 	    <meta charset="UTF-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script></head>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
 			<main>
 				<div id="createGameForm">
 					<section id="fofa">
-		        		<a href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+		        		<a href="index.php"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
 						<h1>Create game</h1>
 		            </section><br>
 		            <div class="topnav">
@@ -66,14 +66,14 @@
 						</div><br>
 						<h5>Phone number</h5>
 						<input type="text" id="phoneNum" name="phoneNum">
-		                <button type="submit" class="btn btn-primary">Create game</button>
+		                <section id="aprrove"></section> <button type="submit" class="btn btn-primary">Create game</button></section>
 					</form>
 				</div>
 
 
 				<div id="eventDet">
 					<section id="fofa">
-						<a href="create-game.html"> <i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+						<a href="create-game.php"> <i class="fa fa-arrow-left" aria-hidden="true"></i></a>
 						<h1>Confirm</h1>
 					</section>
 					<section id="detailsDiv1">
@@ -90,11 +90,11 @@
 							<p> </p>
 						</section>
 						<section id="map"></section>
-						<img src="images/brener school.PNG">
-						<button type="button" class="btn btn-light" onclick="location.href='index.html'">confirm</button>
+						<button type="button" class="btn btn-light" id="confirm" onclick="location.href='index.php'">confirm</button>
 					</section>
 				</div>
 	    	</main>
 	    </div>
+	   	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHtzDjkErd4xgtFWQPUsW38BUpNe5haks&callback=initMap" async defer></script>
 	</body>
 </html>

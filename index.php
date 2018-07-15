@@ -1,3 +1,7 @@
+<?php
+	include('server/db.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,18 +21,18 @@
 	<div id="wrapper">
 		  <nav id="meniu">
 		  		<a href=# id="burger1" onclick="myFunction()"></a>
-                <ul>
+             	   <ul>
                         <li>
-                        	<a href="index.html">Events</a>
+                        	<a href="index.php">Events</a>
                         </li>
                         <li>
                         	<a href=#>Search event</a>
                         </li>
                         <li>
-                        	<a href=#>My events</a>
+                        	<a href="my_games.php">My events</a>
                         </li>
                         <li>
-                        	<a href="create-game.html">Create event</a>
+                        	<a href="create-game.php">Create event</a>
                         </li>
                         <li>
                         	<a href="create-turmanet.html">Create tournament</a>
@@ -37,24 +41,44 @@
                         	<a href="notification.html">Notifications</a>
                         </li>
                         <li>
-                        	<a href=#>Log out</a>
+                        	<a href="log_in.html">Log out</a>
                         </li>
 			</ul>
 		</nav>
 		<main class = "bg_image">
 			<section id="fofa">
 				<a href=# id="burger" onclick="myFunction()"></a>
-				<a href=# id="profile"></a>
+				
+				<img id="profile_in">
+				<span id="user" class="user_name"></span>
+				
 				<h1>Events</h1>
 			</section>
 			<section id="eventsPlace">
-				<a class="event" href="eventDetails.html"> 
-					<p class="_description">"Brener" highschool Kfar-Saba, starts at 16:00</p>
-					<p class="_date">22 May</p>
-					<p class="_approve">aprrove: 11p</p>
-					<p class="_location">Kfar-Saba "Brner"</p>
-					<p class="_join">+ Join</p>
-				</a>
+					<?php
+		                    $query2 = "SELECT * FROM tb_data_215";
+		                    $result = mysqli_query($connection, $query2);
+		                	if(!$result) {
+		                    	die('DB QUERY FAILED.');
+		                	}
+							$i = 0;
+		            	    //GET: get data again
+			                while($row = mysqli_fetch_assoc($result)){
+			                	 //result are in an associative array. keys are cols names 
+			                    echo "<a class='event' id='".$i."'>".
+									 "<p class='_description'>". $row['description']."</p>".
+									 "<p class='_date'>". $row['date']. "</p>".
+									 "<p class='_approve'> aprrove: 11p </p>".
+									 "<p class='_location'>" .$row['street'] ."</p>".
+									 "<p class='_join'>+ Join</p>";
+									 $i++;
+		                	}    
+		                 	//release returned data
+		  					  mysqli_free_result($result);
+						
+						    //close DB connection
+						    mysqli_close($connection);
+				  ?>
 			</section>
 			<section id="detailsDiv">
 				<section id="partic" class="det">
